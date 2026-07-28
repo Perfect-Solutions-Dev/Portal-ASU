@@ -1,0 +1,1702 @@
+/* ==========================================
+   Reset
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Cairo",sans-serif;
+    direction:rtl;
+    background:#eef2f7;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.header{
+
+    background:linear-gradient(135deg,#0B3D91,#174D87);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.header-content{
+
+    height:250px;
+
+    padding:20px 35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:#210c6b;
+
+}
+
+.header-text{
+
+    flex:1;
+
+}
+
+.header-text h2{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    margin-bottom:4px;
+
+}
+
+.header-text h3{
+
+    font-size:15px;
+
+    font-weight:400;
+
+    opacity:.85;
+
+}
+
+.header-text p{
+
+    margin-top:10px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.header-text span{
+
+    display:block;
+
+    font-size:14px;
+
+    opacity:.85;
+
+    margin-top:2px;
+
+}
+
+.header-text h1{
+
+    margin-top:18px;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    line-height:1.6;
+
+}
+
+.portal-year{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    opacity:.9;
+
+    letter-spacing:.5px;
+
+}
+
+.header-logo{
+
+    width:150px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.header-logo img{
+
+    width:90px;
+
+    background:#f8f9fa;
+
+    padding:10px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    transition:.3s;
+}
+
+.header-logo img:hover{
+
+    transform:scale(1.05);
+
+}
+/* ==========================================
+   Navigation
+========================================== */
+
+.navbar{
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 20px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#0B3D91;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    transition:all .3s ease;
+
+}
+
+.navbar a:hover{
+
+    background:#0B3D91;
+
+    color:#ffffff;
+
+}
+
+.navbar a.active{
+
+    background:#0B3D91;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   Courses
+========================================== */
+
+.courses{
+
+    margin-top:25px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.courses h2{
+
+    color:#0B3D91;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+.course{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#333;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #ececec;
+
+    transition:.25s;
+
+}
+
+.course:last-child{
+
+    border-bottom:none;
+
+}
+
+.course:hover{
+
+    background:#f7fbff;
+
+    border-radius:12px;
+
+}
+
+.course h3{
+
+    font-size:20px;
+
+    margin-bottom:5px;
+
+}
+
+.course p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.course span{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    padding:10px 22px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.course:hover span{
+
+    background:#F4C542;
+
+    color:#0B3D91;
+
+}
+
+.disabled{
+
+    opacity:.65;
+
+}
+
+.disabled span{
+
+    background:#999;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    margin:30px 0 20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:2;
+
+}
+
+footer p{
+
+    margin:4px 0;
+
+}
+
+footer .developer{
+
+    color:#f8f9fa;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+
+.header-content{
+
+    height:auto;
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.header-logo{
+
+    width:auto;
+
+}
+
+.header-logo img{
+
+    width:75px;
+
+}
+
+
+
+.header-text h2{
+
+    font-size:26px;
+
+}
+
+.header-text h1{
+
+    font-size:20px;
+
+}
+
+.navbar{
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.course{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:15px;
+
+}
+
+}
+/* ==========================================
+   Home Page
+========================================== */
+
+.hero-home{
+
+    background:#fff;
+
+    margin-top:25px;
+
+    padding:60px 40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.hero-home h2{
+
+    color:#0B3D91;
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-home p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+.start-btn{
+
+    display:inline-block;
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 35px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.start-btn:hover{
+
+    background:#F4C542;
+
+    color:#0B3D91;
+
+}
+
+/* =========================
+   General
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background: white;
+    margin-top: 25px;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+
+.header-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.header-text {
+    text-align: right;
+}
+
+
+.header-text h2 {
+
+    margin: 0;
+    font-size: 28px;
+    color: #123b6d;
+
+}
+
+
+.header-text h3 {
+
+    margin: 5px 0;
+    color: #555;
+
+}
+
+
+.header-text p {
+
+    margin: 8px 0 0;
+    font-weight: 700;
+
+}
+
+
+.header-text span {
+
+    color:#777;
+
+}
+
+
+
+.line {
+
+    height: 3px;
+    width: 100%;
+    background:#c79b3b;
+    margin:15px 0;
+
+}
+
+
+
+.header-text h1 {
+
+    font-size: 22px;
+    color:#123b6d;
+
+}
+
+
+
+.header-logo img {
+
+    width:110px;
+
+}
+
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.navbar a {
+
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:25px;
+    color:#123b6d;
+    background:#f1f3f8;
+    font-weight:600;
+
+}
+
+
+
+.navbar a:hover,
+.navbar .active {
+
+    background:#123b6d;
+    color:white;
+
+}
+
+
+
+/* =========================
+   Course Page
+========================= */
+
+
+.course-page {
+
+    margin-top:40px;
+
+}
+
+
+
+.course-title {
+
+    background:white;
+    padding:5px 25px;
+    border-radius:15px;
+    text-align:Right;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+
+}
+
+
+.course-title h1 {
+
+    font-size:18px;
+    margin:5 0 3px;
+    color:#123b6d;
+
+}
+
+
+.course-title h2 {
+
+    font-size:14px;
+    margin:0 0 5px;
+    color:#777;
+
+}
+
+
+.course-title p {
+
+    margin:0;
+    font-size:15px;
+    font-weight:700;
+    color:#333;
+
+}
+
+
+
+.divider {
+
+    height:2px;
+    background:#c79b3b;
+    margin:35px 0;
+
+}
+
+
+
+/* =========================
+   Chapters
+========================= */
+
+
+.chapter {
+
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.06);
+
+}
+
+
+
+.chapter h2 {
+
+    margin:0;
+    color:#123b6d;
+
+}
+
+
+
+.chapter h3 {
+
+    margin:10px 0 20px;
+    color:#555;
+
+}
+
+
+
+.buttons {
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.buttons a {
+
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
+
+}
+
+
+
+/* Study Button */
+
+.study-btn {
+
+    background:#123b6d;
+    color:white;
+
+}
+
+
+
+.study-btn:hover {
+
+    background:#0d294c;
+
+}
+
+
+
+/* Exam Button */
+
+.exam-btn {
+
+    background:#c79b3b;
+    color:white;
+
+}
+
+
+
+.exam-btn:hover {
+
+    background:#a87f25;
+
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer {
+
+    margin-top:50px;
+    background:#123b6d;
+    color:white;
+    text-align:center;
+    padding:25px;
+
+}
+
+
+
+footer p {
+
+    margin:5px;
+
+}
+
+
+
+.developer {
+
+    margin-top:15px;
+
+}
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+
+@media(max-width:700px){
+
+
+.header-content {
+
+    flex-direction:column-reverse;
+    text-align:center;
+
+}
+
+
+.header-text {
+
+    text-align:center;
+
+}
+
+
+.header-text h1 {
+
+    font-size:18px;
+
+}
+
+
+
+.header-logo img {
+
+    width:90px;
+
+}
+
+
+.buttons {
+
+    flex-direction:column;
+
+}
+
+
+.buttons a {
+
+    text-align:center;
+
+}
+
+
+}
+
+.chapters-grid {
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+
+}
+
+
+
+.chapter-card{
+
+    background:#fff;
+
+    border:1px solid #e6ebf3;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.chapter-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
+
+}
+
+.chapter-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:16px;
+
+}
+
+.chapter-number{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:12px;
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    font-weight:800;
+
+    flex-shrink:0;
+
+}
+
+.chapter-title h3{
+
+    margin:0;
+
+    color:#0B3D91;
+
+    font-size:24px;
+
+}
+
+.chapter-title p{
+
+    margin-top:4px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.chapter-actions{
+
+    display:flex;
+
+    gap:8px;
+
+    width:230px;
+
+}
+
+.chapter-actions a{
+
+    padding:10px 12px;
+
+    font-size:15px;
+
+}
+.chapter-card{
+
+    min-height:120px;
+    padding:14px 18px;
+
+}
+
+@media(max-width:900px){
+
+.chapters-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.chapters-grid{
+    grid-template-columns:1fr;
+}
+
+}
+/*==========================================
+TERMS PAGE
+==========================================*/
+
+.terms-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin:35px 0 50px;
+
+}
+
+.term-card{
+
+    background:#fff;
+
+    text-decoration:none;
+
+    color:#333;
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.term-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.term-card span{
+
+    font-size:46px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+}
+
+.term-card h3{
+
+    color:#0B3D91;
+
+    margin-bottom:8px;
+
+}
+
+.term-card p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+/*==========================================
+SPECIALIZATION
+==========================================*/
+
+.specialization-section{
+
+    margin:35px 0 30px;
+
+}
+
+.specialization-card{
+
+
+    display:block;
+
+    max-width:680px;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    text-align:center;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.specialization-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.special-icon{
+
+    font-size:30px;
+
+    margin-bottom:3px;
+
+}
+
+.specialization-card h2{
+
+    color:#0B3D91;
+
+    font-size:24px;
+
+    margin-bottom:8px;
+
+}
+
+.specialization-card p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:18px;
+
+}
+
+.specialization-card small{
+
+    display:block;
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+}
+
+.special-btn{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    font-family:'Cairo',sans-serif;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.special-btn:hover{
+
+    background:#F4C542;
+
+    color:#0B3D91;
+
+}
+.special-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+    text-align:right;
+
+}
+
+.special-icon{
+
+    font-size:48px;
+
+    flex-shrink:0;
+
+}
+
+.special-header h2{
+
+    margin-bottom:8px;
+
+    color:#0B3D91;
+
+}
+
+.special-header p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+/*==========================
+Semester Tabs
+==========================*/
+
+.semester-tabs{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:30px 0;
+
+}
+
+.semester-tabs a{
+
+    background:#ffffff;
+
+    color:#0B3D91;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+}
+
+.semester-tabs a:hover{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+}
+
+.semester-tabs .active{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+}
+
+/*==========================
+Subjects
+==========================*/
+
+.subjects{
+
+    margin:35px 0 60px;
+
+}
+
+.subject-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:20px 24px;
+
+    margin-bottom:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.subject-info h3{
+
+    color:#0B3D91;
+
+    margin-bottom:6px;
+
+        font-size:24px;
+
+}
+
+.subject-info p{
+
+    color:#666;
+
+    margin-bottom:6px;
+
+}
+
+.subject-info small{
+
+    color:#999;
+
+}
+
+.subject-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.study-btn,
+.exam-btn{
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.study-btn{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+}
+
+.exam-btn{
+
+    background:#F4C542;
+
+    color:#222;
+
+}
+
+.study-btn:hover{
+
+    background:#082d69;
+
+}
+
+.exam-btn:hover{
+
+    background:#d8ac2f;
+
+}
+
+.disabled{
+
+    background:#ddd !important;
+
+    color:#777 !important;
+
+    pointer-events:none;
+
+}
+
+/*==========================================
+NEW CHAPTER CARD
+==========================================*/
+
+.chapter-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:22px 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    margin-bottom:18px;
+
+}
+
+.chapter-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.chapter-number{
+
+    width:70px;
+
+    height:70px;
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    flex-shrink:0;
+
+}
+
+.chapter-content{
+
+    flex:1;
+
+}
+
+.chapter-content h3{
+
+    margin:0;
+
+    color:#0B3D91;
+
+    font-size:24px;
+
+}
+
+.chapter-content p{
+
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.chapter-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.study-btn,
+.exam-btn{
+
+    text-decoration:none;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.study-btn{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+}
+
+.study-btn:hover{
+
+    background:#082d69;
+
+}
+
+.exam-btn{
+
+    background:#F4C542;
+
+    color:#222;
+
+}
+
+.exam-btn:hover{
+
+    background:#ddb02b;
+
+}
+
+/*==========================================
+COURSE BANNER
+==========================================*/
+
+.course-banner{
+
+    background:linear-gradient(135deg,#0B3D91,#195fc8);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:5px;
+
+    border-radius:18px;
+
+    margin:35px auto 25px;
+
+}
+
+.course-banner h1{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.course-banner h2{
+
+    font-size:18px;
+
+    font-weight:400;
+
+    opacity:.9;
+
+}
+
+/*==========================================
+INFO CARDS
+==========================================*/
+
+.course-info{
+
+    display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.info-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.info-card span{
+
+    font-size:34px;
+
+}
+
+.info-card h4{
+
+    color:#0B3D91;
+
+    margin:10px 0 8px;
+
+}
+
+.info-card p{
+
+    color:#666;
+
+}
+.page-title{
+
+    text-align:center;
+
+    margin:35px auto 25px;
+
+}
+
+.page-title h2{
+
+    font-size:34px;
+
+    color:#0B3D91;
+
+    margin-bottom:6px;
+
+}
+
+.page-title h3{
+
+    color:#6b7280;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.page-title p{
+
+    color:#666;
+
+    font-size:16px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
